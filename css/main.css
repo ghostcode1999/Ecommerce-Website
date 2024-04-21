@@ -1735,6 +1735,11 @@
         -ms-flex-pack: center;
             justify-content: center;
   }
+  .align-start {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+  }
   .align-center {
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -3413,7 +3418,7 @@
     position: fixed;
     inset-block-start: 0;
     inset-inline-end: calc(var(--cart-min-width) * -1);
-    inset-block-end: 0;
+    height: 100svh;
     z-index: 99;
     display: -ms-grid;
     display: grid;
@@ -3859,7 +3864,7 @@
   }
 }
 
-/*** Contact Page ***/
+/*** Item Details Page ***/
 .item-detail .product__rate,
 .item-detail .product__price {
   -webkit-box-pack: start;
@@ -3898,6 +3903,77 @@
 }
 .item__icons button:is(:hover, :focus) {
   background-color: var(--clr-primary-500);
+}
+
+/*** All Products Page ***/
+.filter__item h6 {
+  -webkit-padding-after: var(--spacer-2);
+          padding-block-end: var(--spacer-2);
+  -webkit-border-after: 1px solid var(--clr-neutral-200);
+          border-block-end: 1px solid var(--clr-neutral-200);
+}
+.filter__item .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.filter__item .item:not(:last-of-type) {
+  -webkit-margin-after: 0.5em;
+          margin-block-end: 0.5em;
+}
+.filter__item input[type=checkbox]:checked {
+  accent-color: var(--clr-primary-500);
+}
+.filter__item .item__color {
+  width: 1.25rem;
+  aspect-ratio: 1;
+  border-radius: 0.15em;
+  background: var(--item-color);
+}
+
+.all-products__list {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 10rem), 1fr));
+  gap: var(--spacer-2);
+}
+
+.all-products__pagination {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-inline: auto;
+  border: 1px solid var(--clr-secondary-300);
+  border-radius: 100vw;
+  overflow: hidden;
+}
+
+.pagination__btn,
+.pagination__num {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+
+.pagination__btn:is(:hover, :focus, .is-active) {
+  background-color: var(--clr-secondary-500);
+  color: var(--clr-neutral-000);
+}
+
+.pagination__num {
+  font-weight: var(--fw-medium);
+  border-inline: 1px solid var(--clr-secondary-200);
+}
+.pagination__num:is(:hover, :focus, .is-active) {
+  background-color: var(--clr-secondary-200);
+  border-color: var(--clr-secondary-500);
 }
 
 /*** Default Theme ***/

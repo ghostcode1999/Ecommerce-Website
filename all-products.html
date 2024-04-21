@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<!------------------------------------------
+* Template Name: Ecommerce Website
+* Updated: Apr 04 2024
+* Author: Ghostcode
+* PSD Designer: GhostCode
+-------------------------------------------->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Title, Description & Keywords -->
+    <title>All Products</title>
+    <meta name="description" content="Topoco | Ecommerce Website" />
+    <meta name="keywords" content="topoco, ecommerce" />
+    <!-- Favicon -->
+    <!-- <link rel="icon" href="favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png"> -->
+
+    <!-- Google / Search Engine Tags -->
+    <!-- <meta itemprop="name" content="Sass Architecture">
+    <meta itemprop="description" content="Sass Architecture Template">
+    <meta itemprop="image" content=""> -->
+
+    <!-- Facebook Meta Tags -->
+    <!-- <meta property="og:url" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Sass Architecture">
+    <meta property="og:description" content="Sass Architecture Template">
+    <meta property="og:image" content=""> -->
+
+    <!-- Twitter Meta Tags -->
+    <!-- <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Sass Architecture">
+    <meta name="twitter:description" content="Sass Architecture Template">
+    <meta name="twitter:image" content="">
+    <meta name="twitter:site" content="@" />
+    <meta name="twitter:creator" content="@" /> -->
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- External Libraries CSS Files -->
+    <link rel="stylesheet" href="vendors/fontawesome/css/all.min.css" />
+
+    <!-- Main CSS File -->
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <header class="site-header main-grid">
+      <div class="overlay"></div>
+      <div>
+        <div class="site-header__inner top-nav p-block-5">
+          <a href="#"><img src="imgs/logo-black.png" alt="Logo alt text" /></a>
+          <form
+            action="#"
+            class="header__form flex gap-2 p-1 border-radius-pill"
+          >
+            <input
+              type="search"
+              name="Search keyword"
+              placeholder="Search for products..."
+              class="p-inline-start-3 fs-200"
+            />
+            <button
+              type="submit"
+              class="btn p-block-1 align-center gap-2 border-radius-pill"
+              data-type="primary"
+            >
+              <i class="fab fa-searchengin fa-lg"></i>
+              <span>Search</span>
+            </button>
+          </form>
+          <div class="header__cart flex align-center gap-3">
+            <button class="cart__btn">
+              <i class="fa-solid fa-bag-shopping"></i>
+              <span class="cart__count header__cart__count">0</span>
+            </button>
+            <div class="fs-200 fw-medium">
+              <p class="m-block-end-1">My Cart:</p>
+              <p>$<span class="cart__total-price">0</span></p>
+            </div>
+          </div>
+        </div>
+        <nav class="site-header__inner nav">
+          <button class="nav__toggler"><i class="fa fa-bars fa-xl"></i></button>
+          <ul class="nav__list flex align-center">
+            <button class="nav__close-btn">
+              <i class="fa-regular fa-circle-xmark fa-xl"></i>
+            </button>
+            <img
+              src="imgs/logo-black.png"
+              alt="Image alt text"
+              class="nav__logo"
+            />
+            <li><a href="#" class="nav__link active">Home</a></li>
+            <li><a href="#" class="nav__link">All products</a></li>
+            <li><a href="#" class="nav__link">About us</a></li>
+            <li><a href="#" class="nav__link">Contact</a></li>
+          </ul>
+          <div class="flex gap-2 flex-wrap">
+            <a
+              href="#"
+              class="btn align-center gap-1 border-radius-sm fs-200"
+              data-type="primary"
+              >Login <i class="fa-solid fa-right-to-bracket"></i
+            ></a>
+            <a
+              href="#"
+              class="btn align-center gap-1 border-radius-sm fs-200"
+              data-type="primary"
+              >Sign up <i class="fa-solid fa-user-plus"></i
+            ></a>
+          </div>
+        </nav>
+        <div class="cart">
+          <div class="cart__header flex justify-between align-center">
+            <h5 class="m-block-end-0">
+              My Cart<span class="text-neutral-500 fw-normal"
+                >(<span class="cart__count">0</span> items in cart)</span
+              >
+            </h5>
+            <button class="cart__close-btn">
+              <i class="fa-regular fa-circle-xmark fa-xl"></i>
+            </button>
+          </div>
+          <div
+            class="cart__body m-block-4 p-block-3 p-inline-2 flow scrollbar-sm"
+          ></div>
+          <div class="cart__footer">
+            <div class="cart__total flex justify-between fw-medium">
+              <p>Cart subtotal</p>
+              <p class="text-primary-500">
+                $<span class="cart__total-price">0</span>
+              </p>
+            </div>
+            <div class="flex flex-column gap-2">
+              <a href="#" class="btn" data-type="primary"
+                >Proceed to checkout</a
+              >
+              <a href="#" class="btn" data-type="secondary">Shop More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Start Main -->
+    <main class="main-grid">
+      <section class="section g-row all-products">
+        <div class="text-center g-row__inner gap-0">
+          <h2 class="text-primary-500">
+            Experience the Future of Technology with our Topico
+          </h2>
+          <p class="offset-start-2 offset-end-12 m-block-end-10">
+            Find everything you need to transform your home into a smart
+            connected space. Our Topico store offers a wide range of devices to
+            fit your needs
+          </p>
+        </div>
+        <div class="g-row__inner gap-3 align-start">
+          <div
+            class="all-products__filter g-col-4 p-6 bg-neutral-000 shadow-sm flow"
+          >
+            <h4>Filter</h4>
+
+            <div class="filter__item">
+              <h6>Categories</h6>
+              <div class="filter__item__content">
+                <div class="item">
+                  <span>Phones</span>
+                  <input type="checkbox" />
+                </div>
+                <div class="item">
+                  <span>Tablets</span>
+                  <input type="checkbox" />
+                </div>
+                <div class="item">
+                  <span>Electronics</span>
+                  <input type="checkbox" />
+                </div>
+                <div class="item">
+                  <span>TV</span>
+                  <input type="checkbox" />
+                </div>
+                <div class="item">
+                  <span>Fashion</span>
+                  <input type="checkbox" />
+                </div>
+              </div>
+            </div>
+            <div class="filter__item">
+              <h6>Brand</h6>
+              <div class="filter__item__content">
+                <div class="item">
+                  <span>Apple</span>
+                  <input type="checkbox" />
+                </div>
+                <div class="item">
+                  <span>Sumsung</span>
+                  <input type="checkbox" />
+                </div>
+                <div class="item">
+                  <span>Electronics</span>
+                  <input type="checkbox" />
+                </div>
+                <div class="item">
+                  <span>Intel</span>
+                  <input type="checkbox" />
+                </div>
+                <div class="item">
+                  <span>Oppo</span>
+                  <input type="checkbox" />
+                </div>
+              </div>
+            </div>
+            <div class="filter__item">
+              <h6>Color</h6>
+              <div class="filter__item__content">
+                <div class="item" style="--item-color: cyan">
+                  <span class="item__color"></span>
+                  <input type="checkbox" />
+                </div>
+                <div class="item" style="--item-color: hotpink">
+                  <span class="item__color"></span>
+                  <input type="checkbox" />
+                </div>
+                <div class="item" style="--item-color: limegreen">
+                  <span class="item__color"></span>
+                  <input type="checkbox" />
+                </div>
+                <div class="item" style="--item-color: orangered">
+                  <span class="item__color"></span>
+                  <input type="checkbox" />
+                </div>
+                <div class="item" style="--item-color: crimson">
+                  <span class="item__color"></span>
+                  <input type="checkbox" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="all-products__list g-col-8"></div>
+          <div class="all-products__pagination flex justify-center align-center m-block-start-5 bg-neutral-000">
+            <button class="pagination__btn prev"
+              ><i class="fa-solid fa-chevron-left fa-lg"></i
+            ></button>
+            <button class="pagination__num is-active">1</button>
+            <button class="pagination__num">2</button>
+            <button class="pagination__num">3</button>
+            <button class="pagination__btn next is-active"
+              ><i class="fa-solid fa-chevron-right fa-lg"></i
+            ></button>
+          </div>
+        </div>
+      </section>
+      <!-- Start Back To Top -->
+      <button
+        class="back-to-top g-row__inner bg-secondary-500 text-neutral-000 g-start-1 g-end-15 p-3 text-uppercase fw-semibold"
+      >
+        <span>Back to top</span>
+      </button>
+      <!-- End Back To Top -->
+    </main>
+    <!-- End Main -->
+    <!-- Start Footer -->
+    <footer
+      class="main-grid p-block-start-8 bg-neutral-800 text-neutral-000"
+      id="footer"
+    >
+      <div class="g-row">
+        <div class="g-row__inner row-gap-5">
+          <div class="flow g-col-md-4">
+            <img src="imgs/logo-white.png" alt="Image alt text" />
+            <div class="flex align-center gap-3">
+              <i class="fa-solid fa-headset fa-2x text-primary-500"></i>
+              <div>
+                <h5>Hotline Free 24/24</h5>
+                <h6 class="text-primary-500">(+216) 12 345 678</h6>
+              </div>
+            </div>
+            <p class="text-neutral-200">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae,
+              neque.
+            </p>
+          </div>
+          <div
+            class="footer__links g-row__inner g-col-12 g-col-md-8 g-cols-sm-3 gap-4"
+          >
+            <div class="flow">
+              <h5 class="fs-400">FAQs & Help</h5>
+              <ul>
+                <li><a href="#">FAQs</a></li>
+                <li><a href="#">Ordering Tracking</a></li>
+                <li><a href="#">Contacts</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">Help Center</a></li>
+              </ul>
+            </div>
+            <div class="flow">
+              <h5 class="fs-400">Delivery</h5>
+              <ul>
+                <li><a href="#">Delivery Information</a></li>
+                <li><a href="#">Discount</a></li>
+                <li><a href="#">Payment & Shipping</a></li>
+                <li><a href="#">Estimated Delivery Time</a></li>
+                <li><a href="#">Shipping Guide</a></li>
+              </ul>
+            </div>
+            <div class="flow">
+              <h5 class="fs-400">Popular</h5>
+              <ul>
+                <li><a href="#">Popular</a></li>
+                <li><a href="#">Our Services</a></li>
+                <li><a href="#">Your Account</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+              </ul>
+            </div>
+          </div>
+          <div
+            class="footer__payment g-col-12 flex justify-between align-center flex-wrap gap-4 p-block-4"
+          >
+            <p class="m-block-end-0">
+              Copyright &copy; <span class="text-primary-500">Topico.</span> -
+              All Rights Reserved
+            </p>
+            <div class="flex gap-2">
+              <img src="imgs/payment-1.png" alt="Image alt text" />
+              <img src="imgs/payment-2.png" alt="Image alt text" />
+              <img src="imgs/payment-3.png" alt="Image alt text" />
+              <img src="imgs/payment-4.png" alt="Image alt text" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer -->
+    <!-- External Libraries JS Files -->
+    <script src="vendors/fontawesome/js/all.min.js"></script>
+    <!-- Main js Files -->
+    <script src="js/main.js"></script>
+    <script src="js/all-products.js"></script>
+  </body>
+</html>
