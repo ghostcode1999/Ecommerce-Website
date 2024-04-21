@@ -3874,14 +3874,6 @@
   grid-template-rows: 1fr auto;
   justify-items: center;
 }
-.item__img .item__img__alts {
-  max-width: 50%;
-}
-@media only screen and (min-width: 62em) {
-  .item__img .item__img__alts {
-    max-width: 80%;
-  }
-}
 
 .item__img__alts img {
   cursor: pointer;
