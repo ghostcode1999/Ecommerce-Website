@@ -3418,7 +3418,7 @@
     position: fixed;
     inset-block-start: 0;
     inset-inline-end: calc(var(--cart-min-width) * -1);
-    height: 100vh;
+    inset-block-end: 0;
     z-index: 99;
     display: -ms-grid;
     display: grid;
