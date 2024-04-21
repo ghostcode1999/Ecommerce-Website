@@ -3418,8 +3418,7 @@
     position: fixed;
     inset-block-start: 0;
     inset-inline-end: calc(var(--cart-min-width) * -1);
-    inset-block-end: 0;
-    overflow: hidden;
+    height: 100vh;
     z-index: 99;
     display: -ms-grid;
     display: grid;
@@ -3442,6 +3441,7 @@
   }
   .cart__body {
     border-block: 1px solid var(--clr-neutral-300);
+    overflow: auto;
   }
   .cart__close-btn {
     cursor: pointer;
