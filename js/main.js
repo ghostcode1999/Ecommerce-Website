@@ -177,7 +177,8 @@ fetch("js/products.json")
       const percentDiscount = Math.floor(
         ((product.new_price - product.old_price) / product.old_price) * 100
       );
-      saleProducts.innerHTML += `
+      if (saleProducts) {
+        saleProducts.innerHTML += `
       <div class="slider__product swiper-slide flow">
                 <div class="product__icons">
                   <button class="cart__add-btn" onclick="addToCart(${product.id}, this)"><i class="fa-solid fa-cart-plus"></i></button>
@@ -211,8 +212,10 @@ fetch("js/products.json")
                 </div>
               </div>
       `;
+      }
 
-      computerProducts.innerHTML += `
+      if (computerProducts) {
+        computerProducts.innerHTML += `
       <div class="slider__product swiper-slide flow">
                 <div class="product__icons">
                   <button class="cart__add-btn" onclick="addToCart(${product.id}, this)"><i class="fa-solid fa-cart-plus"></i></button>
@@ -243,7 +246,9 @@ fetch("js/products.json")
                 </div>
               </div>
       `;
-      phoneProducts.innerHTML += `
+      }
+      if (phoneProducts) {
+        phoneProducts.innerHTML += `
       <div class="slider__product swiper-slide flow">
                 <div class="product__icons">
                   <button class="cart__add-btn" onclick="addToCart(${product.id}, this)"><i class="fa-solid fa-cart-plus"></i></button>
@@ -274,6 +279,7 @@ fetch("js/products.json")
                 </div>
               </div>
       `;
+      }
     });
   });
 
@@ -284,6 +290,11 @@ on("click", ".back-to-top", () => {
     behavior: "smooth",
   });
 });
+
+//** Toggle between item images */
+on("click", ".item__img__alts img", function() {
+  select(".item__img__main").src = this.src;
+}, true)
 
 //** Initialize Swiper sliders */
 const heroSwiper = new Swiper(".hero__slider", {

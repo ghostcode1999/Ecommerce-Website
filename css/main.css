@@ -3860,7 +3860,54 @@
 }
 
 /*** Contact Page ***/
-@layer content {}
+.item-detail .product__rate,
+.item-detail .product__price {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
+.item__img {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr auto;
+  grid-template-rows: 1fr auto;
+  justify-items: center;
+}
+.item__img .item__img__alts {
+  max-width: 50%;
+}
+@media only screen and (min-width: 62em) {
+  .item__img .item__img__alts {
+    max-width: 80%;
+  }
+}
+
+.item__img__alts img {
+  cursor: pointer;
+}
+
+.item__icons button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 2.5rem;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background-color: var(--clr-neutral-100);
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+.item__icons button:is(:hover, :focus) {
+  background-color: var(--clr-primary-500);
+}
+
 /*** Default Theme ***/
 /*** Admin Theme ***/
 /*** OwlCarousel Custom Styles ***/

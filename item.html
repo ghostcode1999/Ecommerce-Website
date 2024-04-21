@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<!------------------------------------------
+* Template Name: Ecommerce Website
+* Updated: Apr 04 2024
+* Author: Ghostcode
+* PSD Designer: GhostCode
+-------------------------------------------->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Title, Description & Keywords -->
+    <title>Item Example</title>
+    <meta name="description" content="Topoco | Ecommerce Website" />
+    <meta name="keywords" content="topoco, ecommerce" />
+    <!-- Favicon -->
+    <!-- <link rel="icon" href="favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png"> -->
+
+    <!-- Google / Search Engine Tags -->
+    <!-- <meta itemprop="name" content="Sass Architecture">
+    <meta itemprop="description" content="Sass Architecture Template">
+    <meta itemprop="image" content=""> -->
+
+    <!-- Facebook Meta Tags -->
+    <!-- <meta property="og:url" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Sass Architecture">
+    <meta property="og:description" content="Sass Architecture Template">
+    <meta property="og:image" content=""> -->
+
+    <!-- Twitter Meta Tags -->
+    <!-- <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Sass Architecture">
+    <meta name="twitter:description" content="Sass Architecture Template">
+    <meta name="twitter:image" content="">
+    <meta name="twitter:site" content="@" />
+    <meta name="twitter:creator" content="@" /> -->
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- External Libraries CSS Files -->
+    <link rel="stylesheet" href="vendors/fontawesome/css/all.min.css" />
+    <link rel="stylesheet" href="vendors/swiper/swiper-bundle.min.css" />
+    <!-- Customized External Libraries CSS Files -->
+
+    <!-- Main CSS File -->
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <header class="site-header main-grid">
+      <div class="overlay"></div>
+      <div>
+        <div class="site-header__inner top-nav p-block-5">
+          <a href="#"><img src="imgs/logo-black.png" alt="Logo alt text" /></a>
+          <form
+            action="#"
+            class="header__form flex gap-2 p-1 border-radius-pill"
+          >
+            <input
+              type="search"
+              name="Search keyword"
+              placeholder="Search for products..."
+              class="p-inline-start-3 fs-200"
+            />
+            <button
+              type="submit"
+              class="btn p-block-1 align-center gap-2 border-radius-pill"
+              data-type="primary"
+            >
+              <i class="fab fa-searchengin fa-lg"></i>
+              <span>Search</span>
+            </button>
+          </form>
+          <div class="header__cart flex align-center gap-3">
+            <button class="cart__btn">
+              <i class="fa-solid fa-bag-shopping"></i>
+              <span class="cart__count header__cart__count">0</span>
+            </button>
+            <div class="fs-200 fw-medium">
+              <p class="m-block-end-1">My Cart:</p>
+              <p>$<span class="cart__total-price">0</span></p>
+            </div>
+          </div>
+        </div>
+        <nav class="site-header__inner nav">
+          <button class="nav__toggler"><i class="fa fa-bars fa-xl"></i></button>
+          <ul class="nav__list flex align-center">
+            <button class="nav__close-btn">
+              <i class="fa-regular fa-circle-xmark fa-xl"></i>
+            </button>
+            <img
+              src="imgs/logo-black.png"
+              alt="Image alt text"
+              class="nav__logo"
+            />
+            <li><a href="#" class="nav__link active">Home</a></li>
+            <li><a href="#" class="nav__link">All products</a></li>
+            <li><a href="#" class="nav__link">About us</a></li>
+            <li><a href="#" class="nav__link">Contact</a></li>
+          </ul>
+          <div class="flex gap-2 flex-wrap">
+            <a
+              href="#"
+              class="btn align-center gap-1 border-radius-sm fs-200"
+              data-type="primary"
+              >Login <i class="fa-solid fa-right-to-bracket"></i
+            ></a>
+            <a
+              href="#"
+              class="btn align-center gap-1 border-radius-sm fs-200"
+              data-type="primary"
+              >Sign up <i class="fa-solid fa-user-plus"></i
+            ></a>
+          </div>
+        </nav>
+        <div class="cart">
+          <div class="cart__header flex justify-between align-center">
+            <h5 class="m-block-end-0">
+              My Cart<span class="text-neutral-500 fw-normal"
+                >(<span class="cart__count">0</span> items in cart)</span
+              >
+            </h5>
+            <button class="cart__close-btn">
+              <i class="fa-regular fa-circle-xmark fa-xl"></i>
+            </button>
+          </div>
+          <div
+            class="cart__body m-block-4 p-block-3 p-inline-2 flow scrollbar-sm"
+          ></div>
+          <div class="cart__footer">
+            <div class="cart__total flex justify-between fw-medium">
+              <p>Cart subtotal</p>
+              <p class="text-primary-500">
+                $<span class="cart__total-price">0</span>
+              </p>
+            </div>
+            <div class="flex flex-column gap-2">
+              <a href="#" class="btn" data-type="primary"
+                >Proceed to checkout</a
+              >
+              <a href="#" class="btn" data-type="secondary">Shop More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Start Main -->
+    <main class="main-grid">
+      <!-- Start Item -->
+      <section class="g-row item-detail section bg-neutral-000">
+        <div class="g-row__inner gap-4">
+          <div class="item__img g-col-lg-5">
+            <div>
+              <img
+                src="imgs/product/product-2.jpg"
+                alt="Image alt text"
+                class="item__img__main"
+              />
+            </div>
+            <ul class="item__img__alts flex justify-center gap-1">
+              <li>
+                <img src="imgs/product/product1.jpg" alt="Image alt text" />
+              </li>
+              <li>
+                <img src="imgs/product/product-1.jpg" alt="Image alt text" />
+              </li>
+              <li>
+                <img src="imgs/product/product2.jpg" alt="Image alt text" />
+              </li>
+              <li>
+                <img src="imgs/product/product-2.jpg" alt="Image alt text" />
+              </li>
+            </ul>
+          </div>
+          <div class="item__details flow g-col-lg-7">
+            <h4>Original Mobile Android Dual SIM Smart Phone G3</h4>
+            <ul class="product__rate">
+              <li><i class="fa fa-star"></i></li>
+              <li><i class="fa fa-star"></i></li>
+              <li><i class="fa fa-star"></i></li>
+              <li><i class="fa fa-star"></i></li>
+              <li><i class="fa fa-star"></i></li>
+            </ul>
+            <div class="product__price">
+              <span class="new-price">$120.00</span>
+              <span class="old-price">$160.00</span>
+            </div>
+            <h6>
+              Availability: <span class="text-primary-500">In Stock</span>
+            </h6>
+            <h6>
+              SKU: <span class="text-primary-500">Sumsung G2345 M789</span>
+            </h6>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut
+              consectetur, nihil magni reiciendis tenetur, vero voluptatibus,
+              iste quam voluptatem quo distinctio corrupti doloremque nostrum a
+              dignissimos eos. Repudiandae sit fuga deserunt, obcaecati natus
+              ipsum, voluptatum est nam, quod quas rem.
+            </p>
+            <h6>Hurry up! Only 98 products left in stock.</h6>
+            <button class="btn align-center gap-2" data-type="primary">
+              Add to cart <i class="fa-solid fa-cart-arrow-down"></i>
+            </button>
+            <div class="item__icons flex gap-2">
+              <button><i class="fa-regular fa-heart"></i></button>
+              <button><i class="fa-solid fa-sliders"></i></button>
+              <button><i class="fa-solid fa-print"></i></button>
+              <button><i class="fa-solid fa-share-nodes"></i></button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Item -->
+      <!-- Start On Sale -->
+      <section class="section g-row">
+        <div class="g-row__inner slider">
+          <div class="slider__header">
+            <h3>On Sale <span>Products</span></h3>
+          </div>
+          <div class="sale__slider">
+            <div
+              class="slider__products swiper-wrapper"
+              id="sale__products"
+            ></div>
+            <div class="swiper-button-prev slider__btn"></div>
+            <div class="swiper-button-next slider__btn"></div>
+          </div>
+        </div>
+      </section>
+      <!-- End On Sale -->
+      <!-- Start Back To Top -->
+      <button
+        class="back-to-top g-row__inner bg-secondary-500 text-neutral-000 g-start-1 g-end-15 p-3 text-uppercase fw-semibold"
+      >
+        <span>Back to top</span>
+      </button>
+      <!-- End Back To Top -->
+    </main>
+    <!-- End Main -->
+    <!-- Start Footer -->
+    <footer
+      class="main-grid p-block-start-8 bg-neutral-800 text-neutral-000"
+      id="footer"
+    >
+      <div class="g-row">
+        <div class="g-row__inner row-gap-5">
+          <div class="flow g-col-md-4">
+            <img src="imgs/logo-white.png" alt="Image alt text" />
+            <div class="flex align-center gap-3">
+              <i class="fa-solid fa-headset fa-2x text-primary-500"></i>
+              <div>
+                <h5>Hotline Free 24/24</h5>
+                <h6 class="text-primary-500">(+216) 12 345 678</h6>
+              </div>
+            </div>
+            <p class="text-neutral-200">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae,
+              neque.
+            </p>
+          </div>
+          <div
+            class="footer__links g-row__inner g-col-12 g-col-md-8 g-cols-sm-3 gap-4"
+          >
+            <div class="flow">
+              <h5 class="fs-400">FAQs & Help</h5>
+              <ul>
+                <li><a href="#">FAQs</a></li>
+                <li><a href="#">Ordering Tracking</a></li>
+                <li><a href="#">Contacts</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">Help Center</a></li>
+              </ul>
+            </div>
+            <div class="flow">
+              <h5 class="fs-400">Delivery</h5>
+              <ul>
+                <li><a href="#">Delivery Information</a></li>
+                <li><a href="#">Discount</a></li>
+                <li><a href="#">Payment & Shipping</a></li>
+                <li><a href="#">Estimated Delivery Time</a></li>
+                <li><a href="#">Shipping Guide</a></li>
+              </ul>
+            </div>
+            <div class="flow">
+              <h5 class="fs-400">Popular</h5>
+              <ul>
+                <li><a href="#">Popular</a></li>
+                <li><a href="#">Our Services</a></li>
+                <li><a href="#">Your Account</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+              </ul>
+            </div>
+          </div>
+          <div
+            class="footer__payment g-col-12 flex justify-between align-center flex-wrap gap-4 p-block-4"
+          >
+            <p class="m-block-end-0">
+              Copyright &copy; <span class="text-primary-500">Topico.</span> -
+              All Rights Reserved
+            </p>
+            <div class="flex gap-2">
+              <img src="imgs/payment-1.png" alt="Image alt text" />
+              <img src="imgs/payment-2.png" alt="Image alt text" />
+              <img src="imgs/payment-3.png" alt="Image alt text" />
+              <img src="imgs/payment-4.png" alt="Image alt text" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer -->
+    <!-- External Libraries JS Files -->
+    <script src="js/jquery-3.7.0.min.js"></script>
+    <script src="vendors/fontawesome/js/all.min.js"></script>
+    <script src="vendors/swiper/swiper-bundle.min.js"></script>
+    <!-- Main JS File -->
+    <script src="js/main.js"></script>
+    <!-- <script src="js/master.js"></script> -->
+  </body>
+</html>
