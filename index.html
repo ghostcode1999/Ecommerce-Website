@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<!------------------------------------------
+* Template Name: Ecommerce Website
+* Updated: Apr 04 2024
+* Author: Ghostcode
+* PSD Designer: GhostCode
+-------------------------------------------->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Title, Description & Keywords -->
+    <title>Topoco</title>
+    <meta name="description" content="Topoco | Ecommerce Website" />
+    <meta name="keywords" content="topoco, ecommerce" />
+    <!-- Favicon -->
+    <!-- <link rel="icon" href="favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png"> -->
+
+    <!-- Google / Search Engine Tags -->
+    <!-- <meta itemprop="name" content="Sass Architecture">
+    <meta itemprop="description" content="Sass Architecture Template">
+    <meta itemprop="image" content=""> -->
+
+    <!-- Facebook Meta Tags -->
+    <!-- <meta property="og:url" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Sass Architecture">
+    <meta property="og:description" content="Sass Architecture Template">
+    <meta property="og:image" content=""> -->
+
+    <!-- Twitter Meta Tags -->
+    <!-- <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Sass Architecture">
+    <meta name="twitter:description" content="Sass Architecture Template">
+    <meta name="twitter:image" content="">
+    <meta name="twitter:site" content="@" />
+    <meta name="twitter:creator" content="@" /> -->
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- External Libraries CSS Files -->
+    <link rel="stylesheet" href="vendors/fontawesome/css/all.min.css" />
+    <link rel="stylesheet" href="vendors/swiper/swiper-bundle.min.css" />
+    <!-- Customized External Libraries CSS Files -->
+
+    <!-- Main CSS File -->
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <header class="site-header main-grid">
+      <div class="overlay"></div>
+      <div>
+        <div class="site-header__inner top-nav p-block-5">
+          <a href="#"><img src="imgs/logo-black.png" alt="Logo alt text" /></a>
+          <form
+            action="#"
+            class="header__form flex gap-2 p-1 border-radius-pill"
+          >
+            <input
+              type="search"
+              name="Search keyword"
+              placeholder="Search for products..."
+              class="p-inline-start-3 fs-200"
+            />
+            <button
+              type="submit"
+              class="btn p-block-1 align-center gap-2 border-radius-pill"
+              data-type="primary"
+            >
+              <i class="fab fa-searchengin fa-lg"></i>
+              <span>Search</span>
+            </button>
+          </form>
+          <div class="header__cart flex align-center gap-3">
+            <button class="cart__btn">
+              <i class="fa-solid fa-bag-shopping"></i>
+              <span class="cart__count header__cart__count">0</span>
+            </button>
+            <div class="fs-200 fw-medium">
+              <p class="m-block-end-1">My Cart:</p>
+              <p>$<span class="cart__total-price">0</span></p>
+            </div>
+          </div>
+        </div>
+        <nav class="site-header__inner nav">
+          <button class="nav__toggler"><i class="fa fa-bars fa-xl"></i></button>
+          <ul class="nav__list flex align-center">
+            <button class="nav__close-btn">
+              <i class="fa-regular fa-circle-xmark fa-xl"></i>
+            </button>
+            <img
+              src="imgs/logo-black.png"
+              alt="Image alt text"
+              class="nav__logo"
+            />
+            <li><a href="#" class="nav__link active">Home</a></li>
+            <li><a href="#" class="nav__link">All products</a></li>
+            <li><a href="#" class="nav__link">About us</a></li>
+            <li><a href="#" class="nav__link">Contact</a></li>
+          </ul>
+          <div class="flex gap-2 flex-wrap">
+            <a
+              href="#"
+              class="btn align-center gap-1 border-radius-sm fs-200"
+              data-type="primary"
+              >Login <i class="fa-solid fa-right-to-bracket"></i
+            ></a>
+            <a
+              href="#"
+              class="btn align-center gap-1 border-radius-sm fs-200"
+              data-type="primary"
+              >Sign up <i class="fa-solid fa-user-plus"></i
+            ></a>
+          </div>
+        </nav>
+        <div class="cart">
+          <div class="cart__header flex justify-between align-center">
+            <h5 class="m-block-end-0">
+              My Cart<span class="text-neutral-500 fw-normal"
+                >(<span class="cart__count">0</span> items in cart)</span
+              >
+            </h5>
+            <button class="cart__close-btn">
+              <i class="fa-regular fa-circle-xmark fa-xl"></i>
+            </button>
+          </div>
+          <div
+            class="cart__body m-block-4 p-block-3 p-inline-2 flow scrollbar-sm"
+          ></div>
+          <div class="cart__footer">
+            <div class="cart__total flex justify-between fw-medium">
+              <p>Cart subtotal</p>
+              <p class="text-primary-500">
+                $<span class="cart__total-price">0</span>
+              </p>
+            </div>
+            <div class="flex flex-column gap-2">
+              <a href="#" class="btn" data-type="primary"
+                >Proceed to checkout</a
+              >
+              <a href="#" class="btn" data-type="secondary"
+                >Shop More</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Start Main -->
+    <main class="main-grid">
+      <!-- Start Hero -->
+      <section class="hero g-row">
+        <div class="g-row__inner h-100">
+          <div class="hero__aside box-shadow-2 g-col-md-4">
+            <h5
+              class="flex gap-2 align-center text-uppercase p-block-4 p-inline-3 m-block-end-0"
+            >
+              <i class="fa fa-bars"></i>Shop by department
+            </h5>
+            <ul class="aside__links scrollbar-sm">
+              <li><a href="#">All Categories</a></li>
+              <li><a href="#">Best Seller Products</a></li>
+              <li><a href="#">New Arrivals</a></li>
+              <li><a href="#">Top 10 Offers</a></li>
+              <li><a href="#">Phones & Tablets</a></li>
+              <li><a href="#">Electronics & Digital</a></li>
+              <li><a href="#">Fashion & Clothings</a></li>
+              <li><a href="#">Jewelry & Watches</a></li>
+              <li><a href="#">TV & Audio</a></li>
+            </ul>
+          </div>
+          <div class="hero__slider g-col-md-8">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a href="#"
+                  ><img src="imgs/slider-01.jpg" alt="Image alt text"
+                /></a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#"
+                  ><img src="imgs/slider-02.jpg" alt="Image alt text"
+                /></a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#"
+                  ><img src="imgs/slider-03.jpg" alt="Image alt text"
+                /></a>
+              </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+      <!-- End Hero -->
+      <!-- Start Features -->
+      <section class="features g-row g-cols-sm-2 g-cols-md-3 p-block-5">
+        <div class="g-row__inner">
+          <div class="features__item">
+            <img src="imgs/features1.png" alt="Image alt text" />
+            <div>
+              <h6>Free Shipping</h6>
+              <p>Free Shipping on all Orders</p>
+            </div>
+          </div>
+          <div class="features__item">
+            <img src="imgs/features2.png" alt="Image alt text" />
+            <div>
+              <h6>Money Guarantee</h6>
+              <p>30 Day Money Back Guarantee</p>
+            </div>
+          </div>
+          <div class="features__item">
+            <img src="imgs/features3.png" alt="Image alt text" />
+            <div>
+              <h6>Online Support 24/7</h6>
+              <p>Technical Support Stand By</p>
+            </div>
+          </div>
+          <div class="features__item">
+            <img src="imgs/features4.png" alt="Image alt text" />
+            <div>
+              <h6>Secure Payment</h6>
+              <p>All Payment Methods are Accepted</p>
+            </div>
+          </div>
+          <div class="features__item">
+            <img src="imgs/features5.png" alt="Image alt text" />
+            <div>
+              <h6>Member Discount</h6>
+              <p>Up to 40% Discount all Products</p>
+            </div>
+          </div>
+          <div class="features__item">
+            <img src="imgs/features1.png" alt="Image alt text" />
+            <div>
+              <h6>Free Shipping</h6>
+              <p>Free Shipping on all Orders</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Start Features -->
+      <!-- Start Banner -->
+      <section class="banner section g-row g-cols-3">
+        <div class="g-row__inner">
+          <a href="#" class="banner__item">
+            <div class="banner__glass"></div>
+            <img src="imgs/banner/banner-1.jpg" alt="Image alt text" />
+          </a>
+          <a href="#" class="banner__item">
+            <div class="banner__glass"></div>
+            <img src="imgs/banner/banner-2.jpg" alt="Image text alt" />
+          </a>
+          <a href="#" class="banner__item">
+            <div class="banner__glass"></div>
+            <img src="imgs/banner/banner-3.jpg" alt="Image alt text" />
+          </a>
+        </div>
+      </section>
+      <!-- End Banner -->
+      <!-- Start On Sale -->
+      <section class="section g-row">
+        <div class="g-row__inner slider">
+          <div class="slider__header">
+            <h3>On Sale <span>Products</span></h3>
+          </div>
+          <div class="sale__slider">
+            <div
+              class="slider__products swiper-wrapper"
+              id="sale__products"
+            ></div>
+            <div class="swiper-button-prev slider__btn"></div>
+            <div class="swiper-button-next slider__btn"></div>
+          </div>
+        </div>
+      </section>
+      <!-- End On Sale -->
+      <!-- Start Banner -->
+      <section class="banner section g-row g-cols-2">
+        <div class="g-row__inner">
+          <a href="#" class="banner__item">
+            <div class="banner__glass"></div>
+            <img src="imgs/banner/banner-4.jpg" alt="Image alt text" />
+          </a>
+          <a href="#" class="banner__item">
+            <div class="banner__glass"></div>
+            <img src="imgs/banner/banner-5.jpg" alt="Image text alt" />
+          </a>
+        </div>
+      </section>
+      <!-- End Banner -->
+      <!-- Start Computer & Desktop -->
+      <section class="section g-row">
+        <div class="g-row__inner slider">
+          <div class="slider__header">
+            <h3>Computer & Desktop <span>Products</span></h3>
+          </div>
+          <div class="g-row__inner gap-2">
+            <div class="category-img g-col-md-5 g-col-lg-4">
+              <a href="#"
+                ><img src="imgs/banner/banner-sm-1.jpg" alt="Image alt text"
+              /></a>
+            </div>
+            <div class="computer__slider g-col-md-7 g-col-lg-8">
+              <div
+                class="slider__products swiper-wrapper"
+                id="computer__products"
+              ></div>
+              <div class="swiper-button-prev slider__btn"></div>
+              <div class="swiper-button-next slider__btn"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Computer & Desktop -->
+      <!-- Start Computer & Desktop -->
+      <section class="section g-row">
+        <div class="g-row__inner slider">
+          <div class="slider__header">
+            <h3>Phones & Tablets <span>Products</span></h3>
+          </div>
+          <div class="g-row__inner gap-2">
+            <div class="phone__slider g-col-md-7 g-col-lg-8">
+              <div
+                class="slider__products swiper-wrapper"
+                id="phone__products"
+              ></div>
+              <div class="swiper-button-prev slider__btn"></div>
+              <div class="swiper-button-next slider__btn"></div>
+            </div>
+            <div class="category-img g-col-md-5 g-col-lg-4">
+              <a href="#"
+                ><img src="imgs/banner/banner-sm-2.jpg" alt="Image alt text"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Computer & Desktop -->
+      <!-- Start Banner -->
+      <section class="banner section g-row g-cols-3">
+        <div class="g-row__inner">
+          <a href="#" class="banner__item">
+            <div class="banner__glass"></div>
+            <img src="imgs/banner/banner-6.jpg" alt="Image alt text" />
+          </a>
+          <a href="#" class="banner__item">
+            <div class="banner__glass"></div>
+            <img src="imgs/banner/banner-7.jpg" alt="Image text alt" />
+          </a>
+          <a href="#" class="banner__item">
+            <div class="banner__glass"></div>
+            <img src="imgs/banner/banner-8.jpg" alt="Image alt text" />
+          </a>
+        </div>
+      </section>
+      <!-- End Banner -->
+      <!-- Start CTA -->
+      <section class="cta p-block-6 bg-neutral-000 g-row g-cols-lg-2">
+        <div class="g-row__inner align-center gap-4">
+          <div class="flex flex-wrap align-center gap-4">
+            <img src="imgs/icon_email.png" alt="Image alt text" />
+            <div>
+              <h4>Sign Up to Newsletter</h4>
+              <p class="text-neutral-400 fs-200 fw-medium">
+                Get email updates about our latest shop and receive
+              </p>
+              <p class="fw-medium">$30 Coupon for First Shopping</p>
+            </div>
+          </div>
+          <form action="#" class="flex justify-between p-1 border-radius-pill">
+            <input
+              type="email"
+              name="Search keyword"
+              placeholder="Enter your email here..."
+              class="p-inline-4 fs-200 w-100"
+            />
+            <button
+              type="submit"
+              class="btn p-block-1 border-radius-pill"
+              data-type="primary"
+            >
+              Subscribe
+            </button>
+          </form>
+        </div>
+      </section>
+      <!-- End CTA -->
+      <!-- Start Back To Top -->
+      <button
+        class="back-to-top g-row__inner bg-secondary-500 text-neutral-000 g-start-1 g-end-15 p-3 text-uppercase fw-semibold"
+      >
+        <span>Back to top</span>
+      </button>
+      <!-- End Back To Top -->
+      <!-- Start Footer -->
+      <footer
+        class="g-row p-block-start-8 bg-neutral-800 text-neutral-000"
+        id="footer"
+      >
+        <div class="g-row__inner row-gap-5">
+          <div class="flow g-col-md-4">
+            <img src="imgs/logo-white.png" alt="Image alt text" />
+            <div class="flex align-center gap-3">
+              <i class="fa-solid fa-headset fa-2x text-primary-500"></i>
+              <div>
+                <h5>Hotline Free 24/24</h5>
+                <h6 class="text-primary-500">(+216) 12 345 678</h6>
+              </div>
+            </div>
+            <p class="text-neutral-200">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae,
+              neque.
+            </p>
+          </div>
+          <div class="footer__links g-row__inner g-col-12 g-col-md-8 g-cols-sm-3 gap-4">
+            <div class="flow">
+              <h5 class="fs-400">FAQs & Help</h5>
+              <ul>
+                <li><a href="#">FAQs</a></li>
+                <li><a href="#">Ordering Tracking</a></li>
+                <li><a href="#">Contacts</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">Help Center</a></li>
+              </ul>
+            </div>
+            <div class="flow">
+              <h5 class="fs-400">Delivery</h5>
+              <ul>
+                <li><a href="#">Delivery Information</a></li>
+                <li><a href="#">Discount</a></li>
+                <li><a href="#">Payment & Shipping</a></li>
+                <li><a href="#">Estimated Delivery Time</a></li>
+                <li><a href="#">Shipping Guide</a></li>
+              </ul>
+            </div>
+            <div class="flow">
+              <h5 class="fs-400">Popular</h5>
+              <ul>
+                <li><a href="#">Popular</a></li>
+                <li><a href="#">Our Services</a></li>
+                <li><a href="#">Your Account</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+              </ul>
+            </div>
+          </div>
+          <div
+            class="footer__payment g-col-12 flex justify-between align-center flex-wrap gap-4 p-block-4"
+          >
+            <p class="m-block-end-0">
+              Copyright &copy; <span class="text-primary-500">Topico.</span> -
+              All Rights Reserved
+            </p>
+            <div class="flex gap-2">
+              <img src="imgs/payment-1.png" alt="Image alt text" />
+              <img src="imgs/payment-2.png" alt="Image alt text" />
+              <img src="imgs/payment-3.png" alt="Image alt text" />
+              <img src="imgs/payment-4.png" alt="Image alt text" />
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- End Footer -->
+    </main>
+    <!-- End Main -->
+    <!-- External Libraries JS Files -->
+    <script src="js/jquery-3.7.0.min.js"></script>
+    <script src="vendors/fontawesome/js/all.min.js"></script>
+    <script src="vendors/swiper/swiper-bundle.min.js"></script>
+    <!-- Main JS File -->
+    <script src="js/main.js"></script>
+    <!-- <script src="js/master.js"></script> -->
+  </body>
+</html>
