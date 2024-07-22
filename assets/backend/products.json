@@ -1,0 +1,392 @@
+[
+  {
+    "id": "0",
+    "image": "assets/imgs/product/product-2.jpg",
+    "imageHover": "assets/imgs/product/product2.jpg",
+    "name": "Original Mobile Android Dual SIM Smart Phone G3",
+    "newPriceCents": 15000,
+    "oldPriceCents": 20000,
+    "rating": {
+      "stars": 5,
+      "count": 87
+    },
+    "type": "phone"
+  },
+  {
+    "id": "1",
+    "image": "assets/imgs/product/product-3.jpg",
+    "imageHover": "assets/imgs/product/product3.jpg",
+    "name": "Original Mobile Android Dual SIM Smart Phone G3",
+    "newPriceCents": 10000,
+    "oldPriceCents": 12000,
+    "rating": {
+      "stars": 4.5,
+      "count": 105
+    },
+    "type": "computer"
+  },
+  {
+    "id": "2",
+    "image": "assets/imgs/product/product-4.jpg",
+    "imageHover": "assets/imgs/product/product4.jpg",
+    "name": "Original Mobile Android Dual SIM Smart Phone G3",
+    "newPriceCents": 21000,
+    "oldPriceCents": 24000,
+    "rating": {
+      "stars": 3,
+      "count": 50
+    },
+    "type": "sale"
+  },
+  {
+    "id": "3",
+    "image": "assets/imgs/product/product-5.jpg",
+    "imageHover": "assets/imgs/product/product5.jpg",
+    "name": "Original Mobile Android Dual SIM Smart Phone G3",
+    "newPriceCents": 16000,
+    "oldPriceCents": 19000,
+    "rating": {
+      "stars": 5,
+      "count": 120
+    },
+    "type": "phone"
+  },
+  {
+    "id": "4",
+    "image": "assets/imgs/product/product-6.jpg",
+    "imageHover": "assets/imgs/product/product6.jpg",
+    "name": "Original Mobile Android Dual SIM Smart Phone G3",
+    "newPriceCents": 10500,
+    "oldPriceCents": 12500,
+    "rating": {
+      "stars": 4,
+      "count": 140
+    },
+    "type": "sale"
+  },
+  {
+    "id": "5",
+    "image": "assets/imgs/product/product-7.jpg",
+    "imageHover": "assets/imgs/product/product7.jpg",
+    "name": "Original Mobile Android Dual SIM Smart Phone G3",
+    "newPriceCents": 9050,
+    "oldPriceCents": 11525,
+    "rating": {
+      "stars": 5,
+      "count": 70
+    },
+    "type": "sale"
+  },
+  {
+    "id": "6",
+    "image": "assets/imgs/product/product-8.jpg",
+    "imageHover": "assets/imgs/product/product8.jpg",
+    "name": "Original Mobile Android Dual SIM Smart Phone G3",
+    "newPriceCents": 14500,
+    "oldPriceCents": 17500,
+    "rating": {
+      "stars": 4.5,
+      "count": 90
+    },
+    "type": "computer"
+  },
+  {
+    "id": "7",
+    "image": "assets/imgs/product/product1.jpg",
+    "imageHover": "assets/imgs/product/product-1.jpg",
+    "name": "Original Mobile Android Dual SIM Smart Phone G3",
+    "newPriceCents": 18500,
+    "oldPriceCents": 22500,
+    "rating": {
+      "stars": 4,
+      "count": 100
+    },
+    "type": "sale"
+  },
+  {
+    "id": "8",
+    "image": "assets/imgs/product/product2.jpg",
+    "imageHover": "assets/imgs/product/product-2.jpg",
+    "name": "Original Mobile Android Dual SIM Smart Phone G3",
+    "newPriceCents": 15025,
+    "oldPriceCents": 20050,
+    "rating": {
+      "stars": 4.5,
+      "count": 110
+    },
+    "type": "computer"
+  },
+  {
+    "id": "9",
+    "image": "assets/imgs/product/product3.jpg",
+    "imageHover": "assets/imgs/product/product-3.jpg",
+    "name": "Original Mobile Android Dual SIM Smart Phone G3",
+    "newPriceCents": 10000,
+    "oldPriceCents": 12000,
+    "rating": {
+      "stars": 5,
+      "count": 300
+    },
+    "type": "phone"
+  },
+  {
+    "id": "10",
+    "image": "assets/imgs/product/product4.jpg",
+    "imageHover": "assets/imgs/product/product-4.jpg",
+    "name": "Original Mobile Android Dual SIM Smart Phone G3",
+    "newPriceCents": 21050,
+    "oldPriceCents": 24050,
+    "rating": {
+      "stars": 4,
+      "count": 140
+    },
+    "type": "sale"
+  },
+  {
+    "id": "11",
+    "image": "assets/imgs/product/product5.jpg",
+    "imageHover": "assets/imgs/product/product-5.jpg",
+    "name": "Original Mobile Android Dual SIM Smart Phone G3",
+    "newPriceCents": 16075,
+    "oldPriceCents": 19075,
+    "rating": {
+      "stars": 4.5,
+      "count": 50
+    },
+    "type": "sale"
+  },
+  {
+    "id": "12",
+    "image": "assets/imgs/product/product6.jpg",
+    "imageHover": "assets/imgs/product/product-6.jpg",
+    "name": "Original Mobile Android Dual SIM Smart Phone G3",
+    "newPriceCents": 10525,
+    "oldPriceCents": 12525,
+    "rating": {
+      "stars": 4.5,
+      "count": 60
+    },
+    "type": "computer"
+  },
+  {
+    "id": "13",
+    "image": "assets/imgs/product/product7.jpg",
+    "imageHover": "assets/imgs/product/product-7.jpg",
+    "name": "Original Mobile Android Dual SIM Smart Phone G3",
+    "newPriceCents": 9000,
+    "oldPriceCents": 11500,
+    "rating": {
+      "stars": 5,
+      "count": 160
+    },
+    "type": "phone"
+  },
+  {
+    "id": "14",
+    "image": "assets/imgs/product/product8.jpg",
+    "imageHover": "assets/imgs/product/product-8.jpg",
+    "name": "Original Mobile Android Dual SIM Smart Phone G3",
+    "newPriceCents": 14550,
+    "oldPriceCents": 17550,
+    "rating": {
+      "stars": 4,
+      "count": 200
+    },
+    "type": "phone"
+  },
+  {
+    "id": "15",
+    "image": "assets/imgs/product/product-2.jpg",
+    "imageHover": "assets/imgs/product/product2.jpg",
+    "name": "Original Mobile Android Dual SIM Smart Phone G3",
+    "newPriceCents": 15050,
+    "oldPriceCents": 20050,
+    "rating": {
+      "stars": 5,
+      "count": 125
+    },
+    "type": "sale"
+  },
+  {
+    "id": "16",
+    "image": "assets/imgs/product/product-3.jpg",
+    "imageHover": "assets/imgs/product/product3.jpg",
+    "name": "Original Mobile Android Dual SIM Smart Phone G3",
+    "newPriceCents": 10000,
+    "oldPriceCents": 12000,
+    "rating": {
+      "stars": 4.5,
+      "count": 100
+    },
+    "type": "computer"
+  },
+  {
+    "id": "17",
+    "image": "assets/imgs/product/product-4.jpg",
+    "imageHover": "assets/imgs/product/product4.jpg",
+    "name": "Original Mobile Android Dual SIM Smart Phone G3",
+    "newPriceCents": 21000,
+    "oldPriceCents": 24000,
+    "rating": {
+      "stars": 5,
+      "count": 80
+    },
+    "type": "phone"
+  },
+  {
+    "id": "18",
+    "image": "assets/imgs/product/product-5.jpg",
+    "imageHover": "assets/imgs/product/product5.jpg",
+    "name": "Original Mobile Android Dual SIM Smart Phone G3",
+    "newPriceCents": 16050,
+    "oldPriceCents": 19000,
+    "rating": {
+      "stars": 4,
+      "count": 145
+    },
+    "type": "sale"
+  },
+  {
+    "id": "19",
+    "image": "assets/imgs/product/product-6.jpg",
+    "imageHover": "assets/imgs/product/product6.jpg",
+    "name": "Original Mobile Android Dual SIM Smart Phone G3",
+    "newPriceCents": 10500,
+    "oldPriceCents": 12500,
+    "rating": {
+      "stars": 5,
+      "count": 180
+    },
+    "type": "sale"
+  },
+  {
+    "id": "20",
+    "image": "assets/imgs/product/product-7.jpg",
+    "imageHover": "assets/imgs/product/product7.jpg",
+    "name": "Original Mobile Android Dual SIM Smart Phone G3",
+    "newPriceCents": 9050,
+    "oldPriceCents": 11545,
+    "rating": {
+      "stars": 4,
+      "count": 135
+    },
+    "type": "computer"
+  },
+  {
+    "id": "21",
+    "image": "assets/imgs/product/product-8.jpg",
+    "imageHover": "assets/imgs/product/product8.jpg",
+    "name": "Original Mobile Android Dual SIM Smart Phone G3",
+    "newPriceCents": 14500,
+    "oldPriceCents": 17500,
+    "rating": {
+      "stars": 4.5,
+      "count": 230
+    },
+    "type": "phone"
+  },
+  {
+    "id": "22",
+    "image": "assets/imgs/product/product1.jpg",
+    "imageHover": "assets/imgs/product/product-1.jpg",
+    "name": "Original Mobile Android Dual SIM Smart Phone G3",
+    "newPriceCents": 18500,
+    "oldPriceCents": 22500,
+    "rating": {
+      "stars": 5,
+      "count": 80
+    },
+    "type": "computer"
+  },
+  {
+    "id": "23",
+    "image": "assets/imgs/product/product2.jpg",
+    "imageHover": "assets/imgs/product/product-2.jpg",
+    "name": "Original Mobile Android Dual SIM Smart Phone G3",
+    "newPriceCents": 15040,
+    "oldPriceCents": 20050,
+    "rating": {
+      "stars": 5,
+      "count": 90
+    },
+    "type": "sale"
+  },
+  {
+    "id": "24",
+    "image": "assets/imgs/product/product3.jpg",
+    "imageHover": "assets/imgs/product/product-3.jpg",
+    "name": "Original Mobile Android Dual SIM Smart Phone G3",
+    "newPriceCents": 10045,
+    "oldPriceCents": 12045,
+    "rating": {
+      "stars": 4.5,
+      "count": 95
+    },
+    "type": "phone"
+  },
+  {
+    "id": "25",
+    "image": "assets/imgs/product/product4.jpg",
+    "imageHover": "assets/imgs/product/product-4.jpg",
+    "name": "Original Mobile Android Dual SIM Smart Phone G3",
+    "newPriceCents": 21050,
+    "oldPriceCents": 24050,
+    "rating": {
+      "stars": 4,
+      "count": 85
+    },
+    "type": "sale"
+  },
+  {
+    "id": "26",
+    "image": "assets/imgs/product/product5.jpg",
+    "imageHover": "assets/imgs/product/product-5.jpg",
+    "name": "Original Mobile Android Dual SIM Smart Phone G3",
+    "newPriceCents": 16000,
+    "oldPriceCents": 19050,
+    "rating": {
+      "stars": 4.5,
+      "count": 45
+    },
+    "type": "sale"
+  },
+  {
+    "id": "27",
+    "image": "assets/imgs/product/product6.jpg",
+    "imageHover": "assets/imgs/product/product-6.jpg",
+    "name": "Original Mobile Android Dual SIM Smart Phone G3",
+    "newPriceCents": 10500,
+    "oldPriceCents": 12550,
+    "rating": {
+      "stars": 5,
+      "count": 95
+    },
+    "type": "phone"
+  },
+  {
+    "id": "28",
+    "image": "assets/imgs/product/product7.jpg",
+    "imageHover": "assets/imgs/product/product-7.jpg",
+    "name": "Original Mobile Android Dual SIM Smart Phone G3",
+    "newPriceCents": 9050,
+    "oldPriceCents": 11500,
+    "rating": {
+      "stars": 4,
+      "count": 67
+    },
+    "type": "computer"
+  },
+  {
+    "id": "29",
+    "image": "assets/imgs/product/product8.jpg",
+    "imageHover": "assets/imgs/product/product-8.jpg",
+    "name": "Original Mobile Android Dual SIM Smart Phone G3",
+    "newPriceCents": 14500,
+    "oldPriceCents": 17500,
+    "rating": {
+      "stars": 5,
+      "count": 94
+    },
+    "type": "sale"
+  }
+]

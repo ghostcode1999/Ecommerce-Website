@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!------------------------------------------
-* Template Name: Ecommerce Website
-* Updated: Apr 04 2024
+* Template Name: Topico
+* Updated: Jul 14 2024
 * Author: Ghostcode
 * PSD Designer: GhostCode
 -------------------------------------------->
@@ -11,34 +11,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Title, Description & Keywords -->
-    <title>Topoco</title>
-    <meta name="description" content="Topoco | Ecommerce Website" />
-    <meta name="keywords" content="topoco, ecommerce" />
+    <title>Topico</title>
+    <meta name="description" content="Topico | Ecommerce Website" />
+    <meta name="keywords" content="topico, ecommerce" />
     <!-- Favicon -->
-    <!-- <link rel="icon" href="favicon.ico">
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png"> -->
+    <link rel="icon" href="favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
 
     <!-- Google / Search Engine Tags -->
-    <!-- <meta itemprop="name" content="Sass Architecture">
-    <meta itemprop="description" content="Sass Architecture Template">
-    <meta itemprop="image" content=""> -->
+    <meta itemprop="name" content="Topico" />
+    <meta itemprop="description" content="Topico Template" />
+    <meta itemprop="image" content="" />
 
     <!-- Facebook Meta Tags -->
-    <!-- <meta property="og:url" content="">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Sass Architecture">
-    <meta property="og:description" content="Sass Architecture Template">
-    <meta property="og:image" content=""> -->
+    <meta property="og:url" content="" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Topico" />
+    <meta property="og:description" content="Topico Template" />
+    <meta property="og:image" content="" />
 
     <!-- Twitter Meta Tags -->
-    <!-- <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Sass Architecture">
-    <meta name="twitter:description" content="Sass Architecture Template">
-    <meta name="twitter:image" content="">
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Topico" />
+    <meta name="twitter:description" content="Topico Template" />
+    <meta name="twitter:image" content="" />
     <meta name="twitter:site" content="@" />
-    <meta name="twitter:creator" content="@" /> -->
+    <meta name="twitter:creator" content="@" />
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -54,14 +54,20 @@
     <!-- Customized External Libraries CSS Files -->
 
     <!-- Main CSS File -->
-    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
+    <!-- Preloader -->
+    <div class="preloader" data-preloader>
+      <span></span>
+    </div>
     <header class="site-header main-grid">
-      <div class="overlay"></div>
+      <div class="overlay" data-nav-close data-cart-close></div>
       <div>
         <div class="site-header__inner top-nav p-block-5">
-          <a href="index.html"><img src="imgs/logo-black.png" alt="Logo alt text" /></a>
+          <a href="index.html"
+            ><img src="assets/imgs/logo-black.png" alt="Logo alt text"
+          /></a>
           <form
             action="#"
             class="header__form flex gap-2 p-1 border-radius-pill"
@@ -82,41 +88,43 @@
             </button>
           </form>
           <div class="header__cart flex align-center gap-3">
-            <button class="cart__btn">
+            <button class="cart__toggler" data-cart-toggler>
               <i class="fa-solid fa-bag-shopping"></i>
-              <span class="cart__count header__cart__count">0</span>
+              <span class="cart__count header__cart__count" data-cart-quantity>0</span>
             </button>
             <div class="fs-200 fw-medium">
               <p class="m-block-end-1">My Cart:</p>
-              <p>$<span class="cart__total-price">0</span></p>
+              <p>$<span class="cart__total-price" data-cart-total-price>0</span></p>
             </div>
           </div>
         </div>
         <nav class="site-header__inner nav">
-          <button class="nav__toggler"><i class="fa fa-bars fa-xl"></i></button>
+          <button class="nav__toggler" data-nav-toggler><i class="fa fa-bars fa-xl"></i></button>
           <ul class="nav__list flex align-center">
-            <button class="nav__close-btn">
+            <button class="nav__close-btn" data-nav-close>
               <i class="fa-regular fa-circle-xmark fa-xl"></i>
             </button>
             <img
-              src="imgs/logo-black.png"
+              src="assets/imgs/logo-black.png"
               alt="Image alt text"
               class="nav__logo"
             />
-            <li><a href="#" class="nav__link active">Home</a></li>
-            <li><a href="item.html" class="nav__link">All products</a></li>
-            <li><a href="#" class="nav__link">About us</a></li>
-            <li><a href="#" class="nav__link">Contact</a></li>
+            <li><a href="index.html" class="nav__link active">Home</a></li>
+            <li>
+              <a href="all-products.html" class="nav__link">All products</a>
+            </li>
+            <li><a href="index.html" class="nav__link">About us</a></li>
+            <li><a href="contact.html" class="nav__link">Contact</a></li>
           </ul>
           <div class="flex gap-2 flex-wrap">
             <a
-              href="#"
+              href="login.html"
               class="btn align-center gap-1 border-radius-sm fs-200"
               data-type="primary"
               >Login <i class="fa-solid fa-right-to-bracket"></i
             ></a>
             <a
-              href="#"
+              href="signup.html"
               class="btn align-center gap-1 border-radius-sm fs-200"
               data-type="primary"
               >Sign up <i class="fa-solid fa-user-plus"></i
@@ -127,28 +135,28 @@
           <div class="cart__header flex justify-between align-center">
             <h5 class="m-block-end-0">
               My Cart<span class="text-neutral-500 fw-normal"
-                >(<span class="cart__count">0</span> items in cart)</span
+                >(<span class="cart__count" data-cart-quantity>0</span> items in cart)</span
               >
             </h5>
-            <button class="cart__close-btn">
+            <button class="cart__close-btn" data-cart-close>
               <i class="fa-regular fa-circle-xmark fa-xl"></i>
             </button>
           </div>
           <div
-            class="cart__body m-block-4 p-block-3 p-inline-2 flow scrollbar-sm"
+            class="cart__body m-block-4 p-block-3 p-inline-2 flow scrollbar-sm" data-cart-items-wrapper
           ></div>
           <div class="cart__footer">
             <div class="cart__total flex justify-between fw-medium">
               <p>Cart subtotal</p>
               <p class="text-primary-500">
-                $<span class="cart__total-price">0</span>
+                $<span class="cart__total-price" data-cart-total-price>0</span>
               </p>
             </div>
             <div class="flex flex-column gap-2">
-              <a href="#" class="btn" data-type="primary"
+              <a href="checkout.html" class="btn" data-type="primary"
                 >Proceed to checkout</a
               >
-              <a href="#" class="btn" data-type="secondary"
+              <a href="all-products.html" class="btn" data-type="secondary"
                 >Shop More</a
               >
             </div>
@@ -183,17 +191,17 @@
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <a href="#"
-                  ><img src="imgs/slider-01.jpg" alt="Image alt text"
+                  ><img src="assets/imgs/slider-01.jpg" alt="Image alt text"
                 /></a>
               </div>
               <div class="swiper-slide">
                 <a href="#"
-                  ><img src="imgs/slider-02.jpg" alt="Image alt text"
+                  ><img src="assets/imgs/slider-02.jpg" alt="Image alt text"
                 /></a>
               </div>
               <div class="swiper-slide">
                 <a href="#"
-                  ><img src="imgs/slider-03.jpg" alt="Image alt text"
+                  ><img src="assets/imgs/slider-03.jpg" alt="Image alt text"
                 /></a>
               </div>
             </div>
@@ -207,42 +215,42 @@
       <section class="features g-row g-cols-sm-2 g-cols-md-3 p-block-5">
         <div class="g-row__inner">
           <div class="features__item">
-            <img src="imgs/features1.png" alt="Image alt text" />
+            <img src="assets/imgs/features1.png" alt="Image alt text" />
             <div>
               <h6>Free Shipping</h6>
               <p>Free Shipping on all Orders</p>
             </div>
           </div>
           <div class="features__item">
-            <img src="imgs/features2.png" alt="Image alt text" />
+            <img src="assets/imgs/features2.png" alt="Image alt text" />
             <div>
               <h6>Money Guarantee</h6>
               <p>30 Day Money Back Guarantee</p>
             </div>
           </div>
           <div class="features__item">
-            <img src="imgs/features3.png" alt="Image alt text" />
+            <img src="assets/imgs/features3.png" alt="Image alt text" />
             <div>
               <h6>Online Support 24/7</h6>
               <p>Technical Support Stand By</p>
             </div>
           </div>
           <div class="features__item">
-            <img src="imgs/features4.png" alt="Image alt text" />
+            <img src="assets/imgs/features4.png" alt="Image alt text" />
             <div>
               <h6>Secure Payment</h6>
               <p>All Payment Methods are Accepted</p>
             </div>
           </div>
           <div class="features__item">
-            <img src="imgs/features5.png" alt="Image alt text" />
+            <img src="assets/imgs/features5.png" alt="Image alt text" />
             <div>
               <h6>Member Discount</h6>
               <p>Up to 40% Discount all Products</p>
             </div>
           </div>
           <div class="features__item">
-            <img src="imgs/features1.png" alt="Image alt text" />
+            <img src="assets/imgs/features1.png" alt="Image alt text" />
             <div>
               <h6>Free Shipping</h6>
               <p>Free Shipping on all Orders</p>
@@ -256,15 +264,15 @@
         <div class="g-row__inner">
           <a href="#" class="banner__item">
             <div class="banner__glass"></div>
-            <img src="imgs/banner/banner-1.jpg" alt="Image alt text" />
+            <img src="assets/imgs/banner/banner-1.jpg" alt="Image alt text" />
           </a>
           <a href="#" class="banner__item">
             <div class="banner__glass"></div>
-            <img src="imgs/banner/banner-2.jpg" alt="Image text alt" />
+            <img src="assets/imgs/banner/banner-2.jpg" alt="Image text alt" />
           </a>
           <a href="#" class="banner__item">
             <div class="banner__glass"></div>
-            <img src="imgs/banner/banner-3.jpg" alt="Image alt text" />
+            <img src="assets/imgs/banner/banner-3.jpg" alt="Image alt text" />
           </a>
         </div>
       </section>
@@ -278,7 +286,7 @@
           <div class="sale__slider">
             <div
               class="slider__products swiper-wrapper"
-              id="sale__products"
+              id="sale__products" data-sale-products-wrapper
             ></div>
             <div class="swiper-button-prev slider__btn"></div>
             <div class="swiper-button-next slider__btn"></div>
@@ -291,11 +299,11 @@
         <div class="g-row__inner">
           <a href="#" class="banner__item">
             <div class="banner__glass"></div>
-            <img src="imgs/banner/banner-4.jpg" alt="Image alt text" />
+            <img src="assets/imgs/banner/banner-4.jpg" alt="Image alt text" />
           </a>
           <a href="#" class="banner__item">
             <div class="banner__glass"></div>
-            <img src="imgs/banner/banner-5.jpg" alt="Image text alt" />
+            <img src="assets/imgs/banner/banner-5.jpg" alt="Image text alt" />
           </a>
         </div>
       </section>
@@ -309,13 +317,13 @@
           <div class="g-row__inner gap-2">
             <div class="category-img g-col-md-5 g-col-lg-4">
               <a href="#"
-                ><img src="imgs/banner/banner-sm-1.jpg" alt="Image alt text"
+                ><img src="assets/imgs/banner/banner-sm-1.jpg" alt="Image alt text"
               /></a>
             </div>
             <div class="computer__slider g-col-md-7 g-col-lg-8">
               <div
                 class="slider__products swiper-wrapper"
-                id="computer__products"
+                id="computer__products" data-computer-products-wrapper
               ></div>
               <div class="swiper-button-prev slider__btn"></div>
               <div class="swiper-button-next slider__btn"></div>
@@ -324,7 +332,7 @@
         </div>
       </section>
       <!-- End Computer & Desktop -->
-      <!-- Start Computer & Desktop -->
+      <!-- Start Phone & Tablet -->
       <section class="section g-row">
         <div class="g-row__inner slider">
           <div class="slider__header">
@@ -334,34 +342,34 @@
             <div class="phone__slider g-col-md-7 g-col-lg-8">
               <div
                 class="slider__products swiper-wrapper"
-                id="phone__products"
+                id="phone__products" data-phone-products-wrapper
               ></div>
               <div class="swiper-button-prev slider__btn"></div>
               <div class="swiper-button-next slider__btn"></div>
             </div>
             <div class="category-img g-col-md-5 g-col-lg-4">
               <a href="#"
-                ><img src="imgs/banner/banner-sm-2.jpg" alt="Image alt text"
+                ><img src="assets/imgs/banner/banner-sm-2.jpg" alt="Image alt text"
               /></a>
             </div>
           </div>
         </div>
       </section>
-      <!-- End Computer & Desktop -->
+      <!-- End Phone & Tablet -->
       <!-- Start Banner -->
       <section class="banner section g-row g-cols-3">
         <div class="g-row__inner">
           <a href="#" class="banner__item">
             <div class="banner__glass"></div>
-            <img src="imgs/banner/banner-6.jpg" alt="Image alt text" />
+            <img src="assets/imgs/banner/banner-6.jpg" alt="Image alt text" />
           </a>
           <a href="#" class="banner__item">
             <div class="banner__glass"></div>
-            <img src="imgs/banner/banner-7.jpg" alt="Image text alt" />
+            <img src="assets/imgs/banner/banner-7.jpg" alt="Image text alt" />
           </a>
           <a href="#" class="banner__item">
             <div class="banner__glass"></div>
-            <img src="imgs/banner/banner-8.jpg" alt="Image alt text" />
+            <img src="assets/imgs/banner/banner-8.jpg" alt="Image alt text" />
           </a>
         </div>
       </section>
@@ -370,7 +378,7 @@
       <section class="cta p-block-6 bg-neutral-000 g-row g-cols-lg-2">
         <div class="g-row__inner align-center gap-4">
           <div class="flex flex-wrap align-center gap-4">
-            <img src="imgs/icon_email.png" alt="Image alt text" />
+            <img src="assets/imgs/icon_email.png" alt="Image alt text" />
             <div>
               <h4>Sign Up to Newsletter</h4>
               <p class="text-neutral-400 fs-200 fw-medium">
@@ -407,82 +415,83 @@
     </main>
     <!-- End Main -->
     <!-- Start Footer -->
-      <footer
-        class="main-grid p-block-start-8 bg-neutral-800 text-neutral-000"
-        id="footer"
-      >
-        <div class="g-row">
-          <div class="g-row__inner row-gap-5">
-            <div class="flow g-col-md-4">
-              <img src="imgs/logo-white.png" alt="Image alt text" />
-              <div class="flex align-center gap-3">
-                <i class="fa-solid fa-headset fa-2x text-primary-500"></i>
-                <div>
-                  <h5>Hotline Free 24/24</h5>
-                  <h6 class="text-primary-500">(+216) 12 345 678</h6>
-                </div>
-              </div>
-              <p class="text-neutral-200">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae,
-                neque.
-              </p>
-            </div>
-            <div class="footer__links g-row__inner g-col-12 g-col-md-8 g-cols-sm-3 gap-4">
-              <div class="flow">
-                <h5 class="fs-400">FAQs & Help</h5>
-                <ul>
-                  <li><a href="#">FAQs</a></li>
-                  <li><a href="#">Ordering Tracking</a></li>
-                  <li><a href="#">Contacts</a></li>
-                  <li><a href="#">Events</a></li>
-                  <li><a href="#">Help Center</a></li>
-                </ul>
-              </div>
-              <div class="flow">
-                <h5 class="fs-400">Delivery</h5>
-                <ul>
-                  <li><a href="#">Delivery Information</a></li>
-                  <li><a href="#">Discount</a></li>
-                  <li><a href="#">Payment & Shipping</a></li>
-                  <li><a href="#">Estimated Delivery Time</a></li>
-                  <li><a href="#">Shipping Guide</a></li>
-                </ul>
-              </div>
-              <div class="flow">
-                <h5 class="fs-400">Popular</h5>
-                <ul>
-                  <li><a href="#">Popular</a></li>
-                  <li><a href="#">Our Services</a></li>
-                  <li><a href="#">Your Account</a></li>
-                  <li><a href="#">Privacy Policy</a></li>
-                  <li><a href="#">Terms & Conditions</a></li>
-                </ul>
+    <footer
+      class="main-grid p-block-start-8 bg-neutral-800 text-neutral-000"
+      id="footer"
+    >
+      <div class="g-row">
+        <div class="g-row__inner row-gap-5">
+          <div class="flow g-col-md-4">
+            <img src="assets/imgs/logo-white.png" alt="Image alt text" />
+            <div class="flex align-center gap-3">
+              <i class="fa-solid fa-headset fa-2x text-primary-500"></i>
+              <div>
+                <h5>Hotline Free 24/24</h5>
+                <h6 class="text-primary-500">(+216) 12 345 678</h6>
               </div>
             </div>
-            <div
-              class="footer__payment g-col-12 flex justify-between align-center flex-wrap gap-4 p-block-4"
-            >
-              <p class="m-block-end-0">
-                Copyright &copy; <span class="text-primary-500">Topico.</span> -
-                All Rights Reserved
-              </p>
-              <div class="flex gap-2">
-                <img src="imgs/payment-1.png" alt="Image alt text" />
-                <img src="imgs/payment-2.png" alt="Image alt text" />
-                <img src="imgs/payment-3.png" alt="Image alt text" />
-                <img src="imgs/payment-4.png" alt="Image alt text" />
-              </div>
+            <p class="text-neutral-200">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae,
+              neque.
+            </p>
+          </div>
+          <div
+            class="footer__links g-row__inner g-col-12 g-col-md-8 g-cols-sm-3 gap-4"
+          >
+            <div class="flow">
+              <h5 class="fs-400">FAQs & Help</h5>
+              <ul>
+                <li><a href="#">FAQs</a></li>
+                <li><a href="#">Ordering Tracking</a></li>
+                <li><a href="#">Contacts</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">Help Center</a></li>
+              </ul>
+            </div>
+            <div class="flow">
+              <h5 class="fs-400">Delivery</h5>
+              <ul>
+                <li><a href="#">Delivery Information</a></li>
+                <li><a href="#">Discount</a></li>
+                <li><a href="#">Payment & Shipping</a></li>
+                <li><a href="#">Estimated Delivery Time</a></li>
+                <li><a href="#">Shipping Guide</a></li>
+              </ul>
+            </div>
+            <div class="flow">
+              <h5 class="fs-400">Popular</h5>
+              <ul>
+                <li><a href="#">Popular</a></li>
+                <li><a href="#">Our Services</a></li>
+                <li><a href="#">Your Account</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+              </ul>
+            </div>
+          </div>
+          <div
+            class="footer__payment g-col-12 flex justify-between align-center flex-wrap gap-4 p-block-4"
+          >
+            <p class="m-block-end-0">
+              Copyright &copy; <span class="text-primary-500">Topico.</span> -
+              All Rights Reserved
+            </p>
+            <div class="flex gap-2">
+              <img src="assets/imgs/payment-1.png" alt="Image alt text" />
+              <img src="assets/imgs/payment-2.png" alt="Image alt text" />
+              <img src="assets/imgs/payment-3.png" alt="Image alt text" />
+              <img src="assets/imgs/payment-4.png" alt="Image alt text" />
             </div>
           </div>
         </div>
-      </footer>
-      <!-- End Footer -->
+      </div>
+    </footer>
+    <!-- End Footer -->
     <!-- External Libraries JS Files -->
-    <script src="js/jquery-3.7.0.min.js"></script>
     <script src="vendors/fontawesome/js/all.min.js"></script>
     <script src="vendors/swiper/swiper-bundle.min.js"></script>
-    <!-- Main JS File -->
-    <script src="js/main.js"></script>
-    <!-- <script src="js/master.js"></script> -->
+    <!-- Main JS Files -->
+    <script type="module" src="assets/js/src/shared.js"></script>
+    <script type="module" src="assets/js/src/topico.js"></script>
   </body>
 </html>

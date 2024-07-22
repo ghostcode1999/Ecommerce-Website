@@ -11,7 +11,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Title, Description & Keywords -->
-    <title>Topico</title>
+    <title>Topico | Login</title>
     <meta name="description" content="Topico | Ecommerce Website" />
     <meta name="keywords" content="topico, ecommerce" />
     <!-- Favicon -->
@@ -57,12 +57,12 @@
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
-    <!-- Preloader -->
+     <!-- Preloader -->
     <div class="preloader" data-preloader>
       <span></span>
     </div>
     <!-- Start Header -->
-   <header class="site-header main-grid">
+    <header class="site-header main-grid">
       <div class="overlay" data-nav-close data-cart-close></div>
       <div>
         <div class="site-header__inner top-nav p-block-5">
@@ -119,12 +119,6 @@
           </ul>
           <div class="flex gap-2 flex-wrap">
             <a
-              href="login.html"
-              class="btn align-center gap-1 border-radius-sm fs-200"
-              data-type="primary"
-              >Login <i class="fa-solid fa-right-to-bracket"></i
-            ></a>
-            <a
               href="signup.html"
               class="btn align-center gap-1 border-radius-sm fs-200"
               data-type="primary"
@@ -168,30 +162,43 @@
     <!-- End Header -->
     <!-- Start Main -->
     <main class="main-grid">
-      <!-- Start Item -->
-      <section class="g-row item-detail section bg-neutral-000">
-        <div class="g-row__inner gap-4" data-item-detail-wrapper>
-          
+      <section class="section | g-row">
+        <div class="login-wrapper | flow | p-4 p-block-start-8 bg-neutral-000">
+          <h3>Welcome Back</h3>
+
+          <form action="#">
+            <input type="email" name="email" placeholder="Email..." required />
+            <input
+              type="password"
+              placeholder="Password..."
+              name="password"
+              required
+            />
+            <button type="submit" class="btn" data-type="primary">Login</button>
+          </form>
+
+          <p class="login-action-link">
+            <a href="#" class="action-link | fw-medium">Forget password?</a>
+          </p>
+          <p class="login-action-link">
+            Don't have an account?
+            <a href="#" class="action-link sign-up-link | fw-medium"
+              >Sign up now</a
+            >
+          </p>
+
+          <div class="login-action-btns">
+            <a href="#" class="btn | align-center gap-2" data-type="secondary">
+              <i class="fa-brands fa-apple fa-lg"></i>
+              <p>Login with apple</p>
+            </a>
+            <a href="#" class="btn | align-center gap-2" data-type="secondary">
+              <i class="fa-brands fa-google fa-lg"></i>
+              <p>Login with google</p>
+            </a>
+          </div>
         </div>
       </section>
-      <!-- End Item -->
-      <!-- Start On Sale -->
-      <section class="section g-row">
-        <div class="g-row__inner slider">
-          <div class="slider__header">
-            <h3>On Sale <span>Products</span></h3>
-          </div>
-          <div class="sale__slider item-sale-slider">
-            <div
-              class="slider__products swiper-wrapper"
-              id="item-sale-products" data-sale-products-wrapper
-            ></div>
-            <div class="swiper-button-prev slider__btn"></div>
-            <div class="swiper-button-next slider__btn"></div>
-          </div>
-        </div>
-      </section>
-      <!-- End On Sale -->
       <!-- Start Back To Top -->
       <button
         class="back-to-top g-row__inner bg-secondary-500 text-neutral-000 g-start-1 g-end-15 p-3 text-uppercase fw-semibold"
@@ -276,9 +283,7 @@
     <!-- End Footer -->
     <!-- External Libraries JS Files -->
     <script src="vendors/fontawesome/js/all.min.js"></script>
-    <script src="vendors/swiper/swiper-bundle.min.js"></script>
     <!-- Main JS Files -->
     <script type="module" src="assets/js/src/shared.js"></script>
-    <script type="module" src="assets/js/src/item.js"></script>
   </body>
 </html>

@@ -11,7 +11,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Title, Description & Keywords -->
-    <title>Topico</title>
+    <title>Topico | Contact Us</title>
     <meta name="description" content="Topico | Ecommerce Website" />
     <meta name="keywords" content="topico, ecommerce" />
     <!-- Favicon -->
@@ -62,7 +62,7 @@
       <span></span>
     </div>
     <!-- Start Header -->
-   <header class="site-header main-grid">
+    <header class="site-header main-grid">
       <div class="overlay" data-nav-close data-cart-close></div>
       <div>
         <div class="site-header__inner top-nav p-block-5">
@@ -91,16 +91,22 @@
           <div class="header__cart flex align-center gap-3">
             <button class="cart__toggler" data-cart-toggler>
               <i class="fa-solid fa-bag-shopping"></i>
-              <span class="cart__count header__cart__count" data-cart-quantity>0</span>
+              <span class="cart__count header__cart__count" data-cart-quantity
+                >0</span
+              >
             </button>
             <div class="fs-200 fw-medium">
               <p class="m-block-end-1">My Cart:</p>
-              <p>$<span class="cart__total-price" data-cart-total-price>0</span></p>
+              <p>
+                $<span class="cart__total-price" data-cart-total-price>0</span>
+              </p>
             </div>
           </div>
         </div>
         <nav class="site-header__inner nav">
-          <button class="nav__toggler" data-nav-toggler><i class="fa fa-bars fa-xl"></i></button>
+          <button class="nav__toggler" data-nav-toggler>
+            <i class="fa fa-bars fa-xl"></i>
+          </button>
           <ul class="nav__list flex align-center">
             <button class="nav__close-btn" data-nav-close>
               <i class="fa-regular fa-circle-xmark fa-xl"></i>
@@ -115,7 +121,7 @@
               <a href="all-products.html" class="nav__link">All products</a>
             </li>
             <li><a href="index.html" class="nav__link">About us</a></li>
-            <li><a href="contact.html" class="nav__link">Contact</a></li>
+            <li><a href="contact.html" class="nav__link active">Contact</a></li>
           </ul>
           <div class="flex gap-2 flex-wrap">
             <a
@@ -136,7 +142,8 @@
           <div class="cart__header flex justify-between align-center">
             <h5 class="m-block-end-0">
               My Cart<span class="text-neutral-500 fw-normal"
-                >(<span class="cart__count" data-cart-quantity>0</span> items in cart)</span
+                >(<span class="cart__count" data-cart-quantity>0</span> items in
+                cart)</span
               >
             </h5>
             <button class="cart__close-btn" data-cart-close>
@@ -144,7 +151,8 @@
             </button>
           </div>
           <div
-            class="cart__body m-block-4 p-block-3 p-inline-2 flow scrollbar-sm" data-cart-items-wrapper
+            class="cart__body m-block-4 p-block-3 p-inline-2 flow scrollbar-sm"
+            data-cart-items-wrapper
           ></div>
           <div class="cart__footer">
             <div class="cart__total flex justify-between fw-medium">
@@ -168,30 +176,24 @@
     <!-- End Header -->
     <!-- Start Main -->
     <main class="main-grid">
-      <!-- Start Item -->
-      <section class="g-row item-detail section bg-neutral-000">
-        <div class="g-row__inner gap-4" data-item-detail-wrapper>
-          
+      <section class="section | g-row">
+        <div class="login-wrapper | flow | p-4 p-block-start-8 bg-neutral-000">
+          <h3>Let's Get in Touch</h3>
+
+          <form action="#">
+            <input type="text" name="name" placeholder="Name..." required />
+            <input type="email" placeholder="Email..." name="email" required />
+            <textarea
+              name="message"
+              placeholder="Message..."
+              required
+            ></textarea>
+            <button type="submit" class="btn" data-type="secondary">
+              Send
+            </button>
+          </form>
         </div>
       </section>
-      <!-- End Item -->
-      <!-- Start On Sale -->
-      <section class="section g-row">
-        <div class="g-row__inner slider">
-          <div class="slider__header">
-            <h3>On Sale <span>Products</span></h3>
-          </div>
-          <div class="sale__slider item-sale-slider">
-            <div
-              class="slider__products swiper-wrapper"
-              id="item-sale-products" data-sale-products-wrapper
-            ></div>
-            <div class="swiper-button-prev slider__btn"></div>
-            <div class="swiper-button-next slider__btn"></div>
-          </div>
-        </div>
-      </section>
-      <!-- End On Sale -->
       <!-- Start Back To Top -->
       <button
         class="back-to-top g-row__inner bg-secondary-500 text-neutral-000 g-start-1 g-end-15 p-3 text-uppercase fw-semibold"
@@ -276,9 +278,7 @@
     <!-- End Footer -->
     <!-- External Libraries JS Files -->
     <script src="vendors/fontawesome/js/all.min.js"></script>
-    <script src="vendors/swiper/swiper-bundle.min.js"></script>
     <!-- Main JS Files -->
     <script type="module" src="assets/js/src/shared.js"></script>
-    <script type="module" src="assets/js/src/item.js"></script>
   </body>
 </html>
